@@ -14,7 +14,7 @@ exports.writeFixedLengthAsciiString = function(array, offset, length, str) {
     let i = 0;
     const end = Math.min(length, str.length);
     for (i = 0; i < end; ++i) {
-        array[offset + i] = String.charCodeAt(i);
+        array[offset + i] = str.charCodeAt(i);
     }
     for (; i < length; ++i) {
         array[offset + i] = 0;
