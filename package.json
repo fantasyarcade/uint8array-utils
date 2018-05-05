@@ -1,0 +1,19 @@
+{
+  "name": "@fantasyarcade/uint8array-utils",
+  "version": "1.0.0",
+  "description": "Some helper functions for working with `Uint8Array` instances.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyarcade/uint8array-utils.git"
+  },
+  "author": "Jason Frame <jwf@jasonframe.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fantasyarcade/uint8array-utils/issues"
+  },
+  "homepage": "https://github.com/fantasyarcade/uint8array-utils#readme"
+}
