@@ -20,3 +20,23 @@ exports.writeFixedLengthAsciiString = function(array, offset, length, str) {
         array[offset + i] = 0;
     }
 }
+
+exports.readUint16BE = function(b, o) {
+    return (b[o] << 8) | b[o+1];
+}
+
+exports.readUint32BE = function(b, o) {
+    return (b[o] << 24) | (b[o+1] << 16) | (b[o+2] << 8) | b[o+3];
+}
+
+exports.writeUint16BE = function(b, o, v) {
+    b[o] = v >> 8;
+    b[o+1] = v;
+}
+
+exports.writeUint32BE = function(b, o, v) {
+    b[o] = v >> 24;
+    b[o+1] = v >> 16;
+    b[o+2] = v >> 8;
+    b[o+3] = v;
+}
